@@ -1,3 +1,17 @@
+h1,h2,h3,h4,p, a {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(2vw, 50px, 5vw);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(1vw, 25px, 2vw);
+}
+
 .slide {
     display: flex;
     align-items: center;
@@ -5,8 +19,25 @@
     height: 100vh;
     flex-direction: column;
 }
+
 body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+	height: 100vh;
     margin: 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #slide1 img {
