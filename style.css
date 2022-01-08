@@ -18,6 +18,7 @@ h2 {
     justify-content: center;
     height: 100vh;
     flex-direction: column;
+    transition: 0.3s;
 }
 
 body {
@@ -42,4 +43,25 @@ body {
 
 #slide1 img {
     max-width: 300px;
+}
+
+/*Navigation*/
+.navigation {
+    font-size: 100px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navigation:hover {
+    color: darkgray;
+}
+#forwards.navigation {
+    right: 15px;
 }
