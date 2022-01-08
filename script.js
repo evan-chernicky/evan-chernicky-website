@@ -32,6 +32,14 @@ forwards.addEventListener('click', function() {
     forwards.classList.add("active");
     backwards.classList.remove("active");
 });
+document.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowRight") {
+    slide1.classList.add("active");
+    slide2.classList.remove("active");
+    forwards.classList.add("active");
+    backwards.classList.remove("active");
+  }
+});
 
 backwards.addEventListener('click', function() {
     slide1.classList.remove("active");
@@ -39,3 +47,11 @@ backwards.addEventListener('click', function() {
     forwards.classList.remove("active");
     backwards.classList.add("active");
 });
+document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowLeft") {
+        slide1.classList.remove("active");
+        slide2.classList.add("active");
+        forwards.classList.remove("active");
+        backwards.classList.add("active");
+    }
+  });
