@@ -1,4 +1,4 @@
-h1,h2,h3,h4,p, a {
+h1,h2,h3,h4,p, a, li {
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -19,6 +19,7 @@ h2 {
     height: 100vh;
     flex-direction: column;
     transition: 0.3s;
+    width: 100vw;
 }
 
 body {
@@ -71,4 +72,21 @@ body {
 }
 #forwards.navigation.active {
     transform:translateX(150%);
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 200vw;
+}
+
+#slide2 {
+    transform: translateX(-100%);
+}
+
+#slide2.active {
+    transform: unset;
+}
+
+.slide p {
+    max-width: 800px;
 }

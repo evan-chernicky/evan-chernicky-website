@@ -22,8 +22,11 @@ typeWriter();
 
 const forwards = document.getElementById("forwards");
 const slide1 = document.getElementById("slide1");
+const slide2 = document.getElementById("slide2");
+
 
 forwards.addEventListener('click', function() {
     slide1.classList.add("active");
+    slide2.classList.remove("active");
     forwards.classList.add("active");
 });
