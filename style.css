@@ -96,3 +96,26 @@ body {
 .slide p {
     max-width: 800px;
 }
+
+
+/*Social Media */
+.social-media img {
+    width: 35px;
+    transition: 0.3s;
+}
+.social-media a:hover img {
+    transform:scale(.8);
+}
+
+.social-media ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.social-media li {
+    padding: 8px;
+}
