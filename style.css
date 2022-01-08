@@ -67,11 +67,17 @@ body {
 #forwards.navigation {
     right: 15px;
 }
+#backwards.navigation {
+    left: 15px;
+}
 #slide1.active {
     transform: translateX(-100%);
 }
 #forwards.navigation.active {
     transform:translateX(150%);
+}
+#backwards.navigation.active {
+    transform: translateX(-150%);
 }
 
 .sliderWrapper {

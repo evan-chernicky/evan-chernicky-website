@@ -21,6 +21,7 @@ typeWriter();
 //Arrow Navigation
 
 const forwards = document.getElementById("forwards");
+const backwards = document.getElementById("backwards");
 const slide1 = document.getElementById("slide1");
 const slide2 = document.getElementById("slide2");
 
@@ -29,4 +30,12 @@ forwards.addEventListener('click', function() {
     slide1.classList.add("active");
     slide2.classList.remove("active");
     forwards.classList.add("active");
+    backwards.classList.remove("active");
+});
+
+backwards.addEventListener('click', function() {
+    slide1.classList.remove("active");
+    slide2.classList.add("active");
+    forwards.classList.remove("active");
+    backwards.classList.add("active");
 });
