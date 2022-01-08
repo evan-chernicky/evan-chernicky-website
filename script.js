@@ -1,9 +1,9 @@
-//Add JS Here
-let i = 0;
+
+//Adds Typewriter Effectlet i = 0;
 const txt = document.getElementById("introText").innerHTML;
+let i = 0;
 const speed = 35;
 
-//Adds Typewriter Effect
 document.getElementById("introText").innerHTML = "";
 
 function typeWriter() {
@@ -16,3 +16,14 @@ function typeWriter() {
   }
 }
 typeWriter();
+
+
+//Arrow Navigation
+
+const forwards = document.getElementById("forwards");
+const slide1 = document.getElementById("slide1");
+
+forwards.addEventListener('click', function() {
+    slide1.classList.add("active");
+    forwards.classList.add("active");
+});

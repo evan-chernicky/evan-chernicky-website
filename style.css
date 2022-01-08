@@ -27,6 +27,7 @@ body {
 	animation: gradient 7s ease infinite;
 	height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 @keyframes gradient {
@@ -64,4 +65,10 @@ body {
 }
 #forwards.navigation {
     right: 15px;
+}
+#slide1.active {
+    transform: translateX(-100%);
+}
+#forwards.navigation.active {
+    transform:translateX(150%);
 }
